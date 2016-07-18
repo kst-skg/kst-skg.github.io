@@ -1364,7 +1364,9 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.ex-table-filter.js"></script>
     <script>
-    $('table#data').exTableFilter();
+    $('table.data').exTableFilter({
+    filterFieldTemplate : '<div class="my-filter"><span>検索</span> <input type="text"/></div>'
+});
     </script>
   </body>
 </html>
